@@ -113,14 +113,15 @@
             lstUsuarios.ItemHeight = 15;
             lstUsuarios.Location = new Point(307, 28);
             lstUsuarios.Name = "lstUsuarios";
-            lstUsuarios.Size = new Size(235, 139);
+            lstUsuarios.ScrollAlwaysVisible = true;
+            lstUsuarios.Size = new Size(325, 139);
             lstUsuarios.TabIndex = 3;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(586, 208);
+            ClientSize = new Size(718, 208);
             Controls.Add(lstUsuarios);
             Controls.Add(btnListar);
             Controls.Add(btnSalvar);
