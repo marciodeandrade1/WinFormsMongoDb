@@ -18,7 +18,14 @@ namespace WinFormsMongoDb
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            var usuario = new Usuario
+            {
+                Nome = txtNome.Text,
+                Email = txtEmail.Text
+            };
 
+            _colecaoUsuarios.InsertOne(usuario);
+            MessageBox.Show("Usuário salvo com sucesso!");
         }
     }
 }
