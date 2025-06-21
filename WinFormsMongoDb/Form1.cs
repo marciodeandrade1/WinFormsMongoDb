@@ -21,7 +21,8 @@ namespace WinFormsMongoDb
             var usuario = new Usuario
             {
                 Nome = txtNome.Text,
-                Email = txtEmail.Text
+                Email = txtEmail.Text,
+                Telefone = txtTelefone.Text
             };
 
             _colecaoUsuarios.InsertOne(usuario);
