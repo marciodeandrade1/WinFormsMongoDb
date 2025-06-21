@@ -8,6 +8,10 @@ Passo 1: Configurar o Ambiente
 Instale o MongoDB
 
 Baixe e instale o MongoDB Community Server.
+https://www.mongodb.com/pt-br/products/self-managed/community-edition
+Instale também 
+https://www.mongodb.com/try/download/shell
+
 Ou use o MongoDB Atlas (versão em nuvem) se preferir.
 
 Crie um projeto Windows Forms no Visual Studio
