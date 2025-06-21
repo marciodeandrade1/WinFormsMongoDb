@@ -27,5 +27,16 @@ namespace WinFormsMongoDb
             _colecaoUsuarios.InsertOne(usuario);
             MessageBox.Show("Usuário salvo com sucesso!");
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            lstUsuarios.Items.Clear();
+            var usuarios = _colecaoUsuarios.Find(_ => true).ToList();
+
+            foreach (var usuario in usuarios)
+            {
+                lstUsuarios.Items.Add($"{usuario.Nome} - {usuario.Email} - {usuario.Telefone}");
+            }
+        }
     }
 }

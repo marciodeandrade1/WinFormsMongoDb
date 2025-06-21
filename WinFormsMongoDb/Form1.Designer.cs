@@ -105,6 +105,7 @@
             btnListar.TabIndex = 2;
             btnListar.Text = "Listar";
             btnListar.UseVisualStyleBackColor = true;
+            btnListar.Click += btnListar_Click;
             // 
             // lstUsuarios
             // 
